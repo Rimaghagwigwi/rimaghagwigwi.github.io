@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingBot Pro - Automatisez vos Gains</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>TradingBot Pro</h1>
+                <p>Le bot de trading automatique qui génère des profits 24h/24</p>
+                <a href="#pricing" class="cta-button">Commencer maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentation Section -->
+    <section class="section" id="presentation">
+        <div class="container">
+            <h2>Comment ça fonctionne ?</h2>
+            <div class="features">
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Intelligence Artificielle Avancée</h3>
+                    <p>Notre bot utilise des algorithmes d'IA sophistiqués pour analyser les marchés en temps réel et identifier les meilleures opportunités de trading.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analyse Technique Complète</h3>
+                    <p>Plus de 50 indicateurs techniques analysés simultanément pour des décisions de trading précises et rentables.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Gestion des Risques</h3>
+                    <p>Système avancé de gestion des risques avec stop-loss automatique et diversification de portefeuille.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Résultats Exceptionnels</h2>
+            <div class="results">
+                <div class="stat fade-in">
+                    <div class="stat-number">+127%</div>
+                    <div>Rendement moyen annuel</div>
+                </div>
+                <div class="stat fade-in">
+                    <div class="stat-number">87%</div>
+                    <div>Taux de réussite</div>
+                </div>
+                <div class="stat fade-in">
+                    <div class="stat-number">24/7</div>
+                    <div>Trading automatique</div>
+                </div>
+                <div class="stat fade-in">
+                    <div class="stat-number">5000+</div>
+                    <div>Utilisateurs satisfaits</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Ce que disent nos clients</h2>
+            <div class="testimonials">
+                <div class="testimonial fade-in">
+                    <div class="testimonial-text">
+                        J'ai doublé mon capital en 6 mois grâce à TradingBot Pro. L'interface est simple et les résultats sont au rendez-vous !
+                    </div>
+                    <div class="testimonial-author">- Marie Dubois, Investisseuse</div>
+                </div>
+                <div class="testimonial fade-in">
+                    <div class="testimonial-text">
+                        Enfin un bot de trading qui tient ses promesses. Je recommande vivement, surtout pour les débutants.
+                    </div>
+                    <div class="testimonial-author">- Pierre Martin, Entrepreneur</div>
+                </div>
+                <div class="testimonial fade-in">
+                    <div class="testimonial-text">
+                        Les performances sont impressionnantes. Je peux enfin trader même pendant mon sommeil !
+                    </div>
+                    <div class="testimonial-author">- Sophie Laurent, Trader</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <h2>Choisissez votre plan</h2>
+            <div class="pricing">
+                <div class="pricing-card fade-in">
+                    <div class="plan-name">Starter</div>
+                    <div class="plan-price">29€</div>
+                    <div class="plan-period">par mois</div>
+                    <ul class="plan-features">
+                        <li>Trading automatique de base</li>
+                        <li>1 compte de trading connecté</li>
+                        <li>Support email</li>
+                        <li>Rapports mensuels</li>
+                    </ul>
+                    <button class="plan-button" onclick="selectPlan('starter')">Choisir Starter</button>
+                </div>
+                
+                <div class="pricing-card featured fade-in">
+                    <div class="plan-name">Pro</div>
+                    <div class="plan-price">79€</div>
+                    <div class="plan-period">par mois</div>
+                    <ul class="plan-features">
+                        <li>IA avancée + tous les indicateurs</li>
+                        <li>3 comptes de trading connectés</li>
+                        <li>Support prioritaire</li>
+                        <li>Rapports en temps réel</li>
+                        <li>Stratégies personnalisées</li>
+                    </ul>
+                    <button class="plan-button" onclick="selectPlan('pro')">Choisir Pro</button>
+                </div>
+                
+                <div class="pricing-card fade-in">
+                    <div class="plan-name">Enterprise</div>
+                    <div class="plan-price">199€</div>
+                    <div class="plan-period">par mois</div>
+                    <ul class="plan-features">
+                        <li>Toutes les fonctionnalités Pro</li>
+                        <li>Comptes illimités</li>
+                        <li>Support téléphonique 24/7</li>
+                        <li>API personnalisée</li>
+                        <li>Conseiller dédié</li>
+                        <li>Formations privées</li>
+                    </ul>
+                    <button class="plan-button" onclick="selectPlan('enterprise')">Choisir Enterprise</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TradingBot Pro. Tous droits réservés.</p>
+            <p>Trading comporte des risques. Les performances passées ne garantissent pas les résultats futurs.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
