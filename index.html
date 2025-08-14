@@ -24,8 +24,8 @@
     <section class="section" id="how-it-works">
         <div class="container">
             <h2>How Does the Bot Work?</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 36px;">
-                <div style="flex: 1; min-width: 320px;">
+            <div class="how-it-works-content">
+                <div class="how-it-works-features">
                     <div class="features">
                         <div class="feature fade-in">
                             <div class="feature-icon">
@@ -59,13 +59,17 @@
                         </div>
                     </div>
                 </div>
-                <!-- Screenshots Placeholder -->
-                <div style="flex: 1; min-width: 340px; display: flex; flex-direction: column; gap: 20px; align-items: center; justify-content: center;">
-                    <div style="width: 100%; min-height: 220px; background: #f2f4f8; border-radius: 16px; border: 2px dashed #bbb; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 1.2em;">
-                        <span>Screenshot 1<br><i>(drop image here)</i></span>
+            </div>
+            <!-- Screenshots below explanation blocks -->
+            <div class="screenshots-section">
+                <div class="screenshots-container">
+                    <div class="screenshot-item">
+                        <img src="src/bot-interface-screenshot.png" alt="Trading Bot Interface - Main Dashboard" class="screenshot-image">
+                        <p class="screenshot-caption">Main Trading Dashboard with Strategy Selection</p>
                     </div>
-                    <div style="width: 100%; min-height: 220px; background: #f2f4f8; border-radius: 16px; border: 2px dashed #bbb; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 1.2em;">
-                        <span>Screenshot 2<br><i>(drop image here)</i></span>
+                    <div class="screenshot-item">
+                        <img src="src/backtest-results-screenshot.png" alt="Backtesting Results and Performance Charts" class="screenshot-image">
+                        <p class="screenshot-caption">Detailed Backtesting Results and Performance Analysis</p>
                     </div>
                 </div>
             </div>
@@ -92,9 +96,9 @@
                     </div>
                 </div>
             </div>
-            <div style="text-align:center; margin-top: 40px;">
+            <div class="get-started-cta">
                 <a href="#download" class="cta-button">Download for Windows</a>
-                <p style="margin-top:16px;color:#666;">No Python or extra installation required.<br>Just launch and start backtesting or live strategies.</p>
+                <p class="get-started-note">No Python or extra installation required.<br>Just launch and start backtesting or live strategies.</p>
             </div>
         </div>
     </section>
@@ -104,7 +108,7 @@
         <div class="container">
             <h2>Supported Strategies</h2>
             <div class="testimonials">
-                <div class="testimonial fade-in" style="min-height:180px;">
+                <div class="testimonial fade-in strategies-testimonial">
                     <div class="testimonial-text">
                         <b>RSI Strategy:</b> Buy when RSI &lt; 30 (oversold), sell when RSI &gt; 70 (overbought). Great for volatile markets.<br>
                         <b>EMA + RSI + Volume:</b> Combines trend, momentum, and volume for precise signals.<br>
@@ -112,13 +116,13 @@
                         <b>Buy & Hold:</b> Benchmark passive investing.
                     </div>
                 </div>
-                <div class="testimonial fade-in" style="min-height:180px;">
+                <div class="testimonial fade-in strategies-testimonial">
                     <div class="testimonial-text">
                         <b>Backtesting & Live Trading:</b> Simulate your strategies or automate trading on your Binance account, all locally and securely.
                     </div>
                 </div>
             </div>
-            <div style="margin-top:30px; text-align:center;">
+            <div class="strategies-note">
                 <em>Test, analyze, and optimize before risking any real funds.</em>
             </div>
         </div>
@@ -128,10 +132,10 @@
     <section class="section" id="analytics">
         <div class="container">
             <h2>Easy Tool to Evaluate Your Strategy</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 36px;">
-                <div style="flex:2; min-width:320px;">
-                    <div class="stat fade-in" style="background:white; color:#333; margin-bottom:20px;">
-                        <ul style="list-style:none; padding:0; font-size:1.1em;">
+            <div class="analytics-content">
+                <div class="analytics-features">
+                    <div class="stat fade-in analytics-stat">
+                        <ul class="analytics-list">
                             <li><b>Total Return</b>: See your strategy's overall gain or loss (%)</li>
                             <li><b>Sharpe Ratio</b>: Risk-adjusted returns for smarter comparisons</li>
                             <li><b>Max Drawdown</b>: Know your biggest single drop</li>
@@ -140,10 +144,11 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Screenshots Placeholder for Performance -->
-                <div style="flex:3; min-width:340px; display: flex; flex-direction: column; gap: 20px; align-items: center; justify-content: center;">
-                    <div style="width: 100%; min-height: 220px; background: #f2f4f8; border-radius: 16px; border: 2px dashed #bbb; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 1.2em;">
-                        <span>Performance Screenshot<br><i>(drop image here)</i></span>
+                <!-- Performance Screenshot -->
+                <div class="analytics-screenshot">
+                    <div class="screenshot-item">
+                        <img src="src/performance-analytics-screenshot.png" alt="Performance Analytics Dashboard with Charts and Metrics" class="screenshot-image">
+                        <p class="screenshot-caption">Comprehensive Performance Analytics and Trading Metrics</p>
                     </div>
                 </div>
             </div>
@@ -158,11 +163,11 @@
                 <div class="pricing-card fade-in">
                     <div class="plan-name">Level 1: Backtest & Live Trading</div>
                     <div class="plan-price">
-                        <span style="text-decoration:line-through; color:#b44;">$29</span>
-                        <span style="color:#27ae60;font-weight:bold;">$14.50</span>
-                        <span style="font-size:0.7em;">/mo</span>
+                        <span class="plan-price-strikethrough">$29</span>
+                        <span class="plan-price-current">$14.50</span>
+                        <span class="plan-price-period">/mo</span>
                     </div>
-                    <div class="plan-period" style="color:#27ae60; font-weight:bold;">50% off for the first 20 users!</div>
+                    <div class="plan-period plan-discount">50% off for the first 20 users!</div>
                     <ul class="plan-features">
                         <li>Unlimited backtesting (local, no risk)</li>
                         <li>Live trading automation on your Binance account</li>
@@ -176,11 +181,11 @@
                 <div class="pricing-card featured fade-in">
                     <div class="plan-name">Level 2: Full Live Bot (Advanced)</div>
                     <div class="plan-price">
-                        <span style="text-decoration:line-through; color:#b44;">$79</span>
-                        <span style="color:#27ae60;font-weight:bold;">$47.40</span>
-                        <span style="font-size:0.7em;">/mo</span>
+                        <span class="plan-price-strikethrough">$79</span>
+                        <span class="plan-price-current">$49</span>
+                        <span class="plan-price-period">/mo</span>
                     </div>
-                    <div class="plan-period" style="color:#27ae60; font-weight:bold;">40% off for the first 20 users!</div>
+                    <div class="plan-period plan-discount">38% off for the first 20 users!</div>
                     <ul class="plan-features">
                         <li>All Level 1 features</li>
                         <li>Advanced risk management tools</li>
@@ -190,7 +195,7 @@
                     <button class="plan-button" onclick="selectPlan('level2')">Reserve Your Spot</button>
                 </div>
                 
-                <div class="pricing-card fade-in" style="opacity:0.5;pointer-events:none;">
+                <div class="pricing-card fade-in pricing-card-disabled">
                     <div class="plan-name">Level 3: Hosted Bot (Dedicated VM)</div>
                     <div class="plan-price">Coming soon</div>
                     <div class="plan-period"></div>
@@ -203,7 +208,7 @@
                     <button class="plan-button" disabled>Not available yet</button>
                 </div>
             </div>
-            <div style="text-align:center; margin-top:35px;">
+            <div class="plans-disclaimer">
                 <em>No order execution is performed for you – you always control your keys and funds.<br>
                     All plans include a clear disclaimer: this is a decision support tool, not investment advice.</em>
             </div>
